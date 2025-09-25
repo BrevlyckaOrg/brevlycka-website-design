@@ -13,7 +13,16 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'heading': ['Playfair Display', 'serif'],
+        'body': ['Lato', 'sans-serif'],
+      },
       colors: {
+        'sepia-gold': 'hsl(var(--sepia-gold))',
+        'warm-beige': 'hsl(var(--warm-beige))',
+        'wine-red': 'hsl(var(--wine-red))',
+        'olive-green': 'hsl(var(--olive-green))',
+        'deep-blue': 'hsl(var(--deep-blue))',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
