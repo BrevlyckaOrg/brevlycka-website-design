@@ -1,13 +1,12 @@
+import brevlyckaLogo from "@/assets/brevlycka-logo.png";
+import collectibles from "@/assets/collectibles.jpg";
+import heroLetters from "@/assets/hero-letters.jpg";
+import FAQ from "@/components/FAQ";
+import ReviewSection from "@/components/ReviewSection";
+import TrialOffer from "@/components/TrialOffer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Heart, Camera, MapPin, Package, Clock, Calendar } from "lucide-react";
-import heroLetters from "@/assets/hero-letters.jpg";
-import collectibles from "@/assets/collectibles.jpg";
-import mailbox from "@/assets/mailbox.jpg";
-import brevlyckaLogo from "@/assets/brevlycka-logo.png";
-import TrialOffer from "@/components/TrialOffer";
-import ReviewSection from "@/components/ReviewSection";
-import FAQ from "@/components/FAQ";
+import { Calendar, Camera, Clock, Heart, Mail, MapPin, Package } from "lucide-react";
 
 const Index = () => {
   return (
