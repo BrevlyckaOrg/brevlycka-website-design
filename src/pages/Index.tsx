@@ -2,41 +2,24 @@ import brevlyckaLogo from "@/assets/brevlycka-logo.png";
 import collectibles from "@/assets/collectibles.jpg";
 import heroLetters from "@/assets/hero-letters.jpg";
 import FAQ from "@/components/FAQ";
+import MainDescription from "@/components/MainDescription";
 import ReviewSection from "@/components/ReviewSection";
 import TrialOffer from "@/components/TrialOffer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Calendar, Camera, Clock, Heart, Mail, MapPin, Package } from "lucide-react";
+import Header from "../components/Header";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background font-body">
       {/* Header with Logo */}
-      <header className="bg-background/95 backdrop-blur-sm border-b border-sepia-gold/20 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <img 
-                src={brevlyckaLogo} 
-                alt="Brevlycka" 
-                className="h-12 w-auto"
-              />
-              <div className="hidden md:block">
-                <p className="text-sm text-muted-foreground italic">
-                  Ett personligt brev i brevlådan. En hel berättelse i din hand.
-                </p>
-              </div>
-            </div>
-            <Button variant="wine" size="lg" className="hidden md:inline-flex">
-              Beställ din brevserie
-            </Button>
-          </div>
-        </div>
-      </header>
-
+      <Header />
       {/* Hero Section */}
+      <MainDescription />
+
       <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-background to-sepia-gold/10">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${heroLetters})` }}
         />
@@ -133,8 +116,8 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src={collectibles} 
+              <img
+                src={collectibles}
                 alt="Vintage letters with photographs and maps from 1950s Skåne"
                 className="rounded-2xl shadow-elegant w-full"
               />
@@ -214,9 +197,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <img 
-                src={brevlyckaLogo} 
-                alt="Brevlycka" 
+              <img
+                src={brevlyckaLogo}
+                alt="Brevlycka"
                 className="h-16 w-auto mb-4"
               />
               <p className="text-muted-foreground text-lg leading-relaxed">
