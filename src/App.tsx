@@ -6,7 +6,7 @@ import Index from "./pages/Index";
 
 const queryClient = new QueryClient();
 
-const App: React.FC = () => {
+function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
