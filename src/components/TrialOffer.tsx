@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
 
 const TrialOffer = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-warm-beige/30 to-sepia-gold/20">
+    <section className="py-20 bg-gradient-to-r from-warm-beige/50 to-sepia-gold/20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
           <Card className="p-12 bg-background/95 shadow-elegant border-2 border-sepia-gold/30">
