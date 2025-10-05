@@ -40,9 +40,9 @@ const Header = () => {
   const navLinks = [
     { href: "#hem", label: "Hem" },
     { href: "#brevserier", label: "Brevserier" },
-    { href: "#hur-det-fungerar", label: "Så fungerar det" },
-    { href: "#recensioner", label: "Recensioner" },
-    { href: "#faq", label: "FAQ" },
+    // { href: "#hur-det-fungerar", label: "Så fungerar det" },
+    // { href: "#recensioner", label: "Recensioner" },
+    // { href: "#faq", label: "FAQ" },
     { href: "#kontakt", label: "Kontakt" },
   ];
   return (
@@ -62,7 +62,7 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[#6E2E2A] hover:text-[#9AA57A] font-medium transition-colors"
+                className="text-xl text-[#6E2E2A] hover:text-[#9AA57A] font-medium transition-colors"
               >
                 {link.label}
               </a>

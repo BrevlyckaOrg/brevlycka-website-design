@@ -2,7 +2,7 @@ import { Calendar, Heart, Mail, Star } from "lucide-react";
 
 const WhatYouGet = () => {
     return (
-        <section className="py-16 bg-gradient-to-r from-warm-beige/50 to-sepia-gold/20">
+        <section className="py-16">
         <div className="container mx-auto px-6 text-center">
           <h2 className="font-heading text-2xl md:text-2xl lg:text-4xl font-bold text-foreground mb-12">
             Varför prenumerera på Brevlycka?

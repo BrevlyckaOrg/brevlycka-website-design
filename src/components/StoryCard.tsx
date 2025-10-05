@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Bell } from "lucide-react";
+import { Bell, Mail } from "lucide-react";
 
 interface StoryCardProps {
   title: string;
@@ -11,7 +11,7 @@ interface StoryCardProps {
 
 const StoryCard = ({ title, description, letterCount, imageUrl, isActive }: StoryCardProps) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
+    <section className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
       {/* Image */}
       <div className="relative h-80 overflow-hidden">
         <img
@@ -65,7 +65,7 @@ const StoryCard = ({ title, description, letterCount, imageUrl, isActive }: Stor
           </Button>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
