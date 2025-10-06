@@ -12,7 +12,7 @@ const Upplevelsen = () => {
                             Upplevelsen
                         </h2>
                         <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                            Att öppna ett brev från Brevlycka är som att kliva in i en annan värld. Varje utskick är skrivet i klassisk brevstil och låter dig följa en berättelse som växer fram steg för steg, med ord som känns personliga och äkta. Ibland döljer sig dessutom små överraskningar i kuvertet – som illustrationer, fotografier eller detaljer som gör historien ännu mer levande. Det är mer än en bok – det är en samlarupplevelse.
+                            Att öppna ett brev från Brevlycka är som att kliva in i en annan värld. Varje utskick är skrivet i klassisk brevstil och låter dig följa en berättelse som växer fram steg för steg, med ord som känns personliga och äkta. Ibland döljer sig dessutom små överraskningar i kuvertet – som illustrationer, fotografier eller detaljer som gör historien ännu mer levande.
                         </p>
                         <div className="space-y-6">
                             <div className="flex items-start gap-4">

@@ -6,7 +6,7 @@ interface StoryCardFlipProps {
     title: string;
     description: string;
     detailedDescription: string;
-    letterCount: number;
+    letterCount: string;
     imageUrl: string;
     isActive: boolean;
 }
