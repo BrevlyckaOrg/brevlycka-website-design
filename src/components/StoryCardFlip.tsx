@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Bell, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import React, { useState } from "react";
 import "./storycardflip.css";
 
@@ -66,7 +65,7 @@ const StoryCardFlip: React.FC<StoryCardFlipProps> = ({
                             </div>
                         </div>
                         {/* CTA */}
-                        {isActive ? (
+                        {/* {isActive ? (
                             <Button variant="wine" size="lg" className="text-xl px-6 py-6 rounded-xl shadow-elegant">
                                 Beställ dina två första brev – 59 kr
                             </Button>
@@ -75,7 +74,7 @@ const StoryCardFlip: React.FC<StoryCardFlipProps> = ({
                                 <Bell className="mr-2 h-5 w-5" />
                                 Tipsa mig när den kommer
                             </Button>
-                        )}
+                        )} */}
                     </div>
                 </div>
                 {/* Back Side */}

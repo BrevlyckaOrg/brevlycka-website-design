@@ -1,4 +1,5 @@
-import { default as loveStoryImage, default as storyImage } from "@/assets/story-love-1950s.jpg";
+import { default as storyImage } from "@/assets/skane.jpg";
+import { default as loveStoryImage } from "@/assets/story-love-1950s.jpg";
 import StoryCardFlip from "./StoryCardFlip";
 
 const stories = [
@@ -13,16 +14,16 @@ const stories = [
       "Deras berättelse är fylld av tidstypiska detaljer, levande karaktärer och en atmosfär som tar dig tillbaka till 1950-talets Skåne.\n" +
       "Varje brev är noggrant utformat för att fånga känslan av tiden, med små överraskningar som illustrationer, fotografier och personliga anteckningar som gör historien ännu mer levande." +
       "När sista brevet skrivs återstår frågan: var deras kärlek ett öde – eller bara ett spel de båda förlorade?\n",
-    letterCount: 16,
-    imageUrl: storyImage,
-    isActive: true,
+    letterCount: "12",
+    imageUrl: loveStoryImage,
+    isActive: false,
   },
   {
     title: "Kommande berättelser",
     description: "Fler berättelser är på väg! Låt oss tipsa dig när nästa breverie släpps. Varje serie är unik och tar dig med till en annan tid och plats.",
     detailedDescription: "Kommer snart!",
-    letterCount: 16,
-    imageUrl: loveStoryImage,
+    letterCount: "12-16",
+    imageUrl: storyImage,
     isActive: false,
   },
 ];
