@@ -1,5 +1,5 @@
 import brevlyckaLogo from "@/assets/brevlycka-logo.png";
-import { Menu, ShoppingCart, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 
@@ -47,14 +47,16 @@ const Header = () => {
   ];
   return (
     <header className="bg-white/90 backdrop-blur-sm border-b border-[#C6A77C]/20 sticky top-0 z-50">
-      <div className="w-full sm:px-6 lg:px-8">
+      <div className="w-full sm:px-6 lg:px-16">
         <div className="flex flex-col md:flex-row justify-between items-center py-4">
           <div className="flex items-center gap-4">
-            <img
-              src={brevlyckaLogo}
-              alt="Brevlycka"
-              className="h-40 w-auto -mt-7 -mb-7"
-            />
+            <a href="#hem" className="flex items-center">
+              <img
+                src={brevlyckaLogo}
+                alt="Brevlycka"
+                className="h-40 w-auto -mt-7 -mb-7 hover:opacity-90 transition-opacity cursor-pointer"
+              />
+            </a>
           </div>
           
           <nav className="hidden lg:flex items-center space-x-8">
@@ -70,9 +72,9 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <button className="p-2 text-[#6E2E2A] hover:text-[#9AA57A]">
+            {/* <button className="p-2 text-[#6E2E2A] hover:text-[#9AA57A]">
               <ShoppingCart className="h-6 w-6" />
-            </button>
+            </button> */}
             <button
               className="lg:hidden p-2 text-[#6E2E2A] hover:text-[#9AA57A]"
               onClick={() => setMobileMenuOpen(true)}

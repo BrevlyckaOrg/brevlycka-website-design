@@ -1,11 +1,18 @@
-import storyImage from "@/assets/story-love-1950s.jpg";
+import { default as loveStoryImage, default as storyImage } from "@/assets/story-love-1950s.jpg";
 import StoryCardFlip from "./StoryCardFlip";
 
 const stories = [
   {
-    title: "Kärlek på dansbanegolvet",
-    description: "En kärlekshistoria från Skåne på 1950-talet. Följ Anna och Erik genom sommarens dansbanor, kafferep och hemliga möten i en tid när kärleken växte långsamt genom brev och förstulet möten.",
-    detailedDescription: "Följ Anna och Erik genom sommarens dansbanor, kafferep och hemliga möten i en tid när kärleken växte långsamt genom brev och förstulet möten. Deras berättelse är fylld av tidstypiska detaljer, levande karaktärer och en atmosfär som tar dig tillbaka till 1950-talets Skåne. Varje brev är noggrant utformat för att fånga känslan av den tiden, med små överraskningar som illustrationer och fotografier som gör historien ännu mer levande.",
+    title: "Sanningen mellan raderna",
+    description: "År 1956 möts studenten Karin från Lund och fiskarsonen Nils från Skillinge av en slump, och en brevväxling som börjar i oskyldig förälskelse växer till något större. Men bakom Karins ord döljer sig en hemlighet.",
+    detailedDescription:
+      "År 1956 möts studenten Karin Persson från Lund och fiskarsonen Nils Andersson från Skillinge – två unga människor från olika världar som förenas av en oväntad brevväxling.\n" +
+      "Det som börjar som en spirande romans förvandlas snart till något mer komplicerat när Karin antyder att hon bär på en hemlighet, något som kan förändra allt mellan dem.\n" +
+      "Genom tolv brev växer deras relation – fylld av längtan, tvekan och tidens oskrivna regler – medan sanningen långsamt avslöjas mellan raderna.\n" +
+      "\n" +
+      "Deras berättelse är fylld av tidstypiska detaljer, levande karaktärer och en atmosfär som tar dig tillbaka till 1950-talets Skåne.\n" +
+      "Varje brev är noggrant utformat för att fånga känslan av tiden, med små överraskningar som illustrationer, fotografier och personliga anteckningar som gör historien ännu mer levande." +
+      "När sista brevet skrivs återstår frågan: var deras kärlek ett öde – eller bara ett spel de båda förlorade?\n",
     letterCount: 16,
     imageUrl: storyImage,
     isActive: true,
@@ -15,7 +22,7 @@ const stories = [
     description: "Fler berättelser är på väg! Låt oss tipsa dig när nästa breverie släpps. Varje serie är unik och tar dig med till en annan tid och plats.",
     detailedDescription: "Kommer snart!",
     letterCount: 16,
-    imageUrl: storyImage,
+    imageUrl: loveStoryImage,
     isActive: false,
   },
 ];
