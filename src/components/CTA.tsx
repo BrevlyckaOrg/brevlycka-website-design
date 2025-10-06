@@ -1,17 +1,17 @@
-import OrderModal from "@/components/ReviewModal";
+import ReviewModal from "@/components/ReviewModal";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MailOpen } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const CTA = () => {
-  const [orderModalOpen, setOrderModalOpen] = useState(false);
+  const [reviewModalOpen, setReviewModalOpen] = useState(false);
 
   useEffect(() => {
-    // Check if URL contains ?order=true
+    // Check if URL contains ?review=true
     const params = new URLSearchParams(window.location.search);
-    if (params.get('order') === 'true') {
-      setOrderModalOpen(true);
+    if (params.get('review') === 'true') {
+      setReviewModalOpen(true);
       // Optional: Clean up URL by removing the parameter
       window.history.replaceState({}, '', window.location.pathname);
     }
@@ -39,14 +39,14 @@ const CTA = () => {
             <Button
               size="lg"
               className="w-full text-lg py-6"
-              onClick={() => setOrderModalOpen(true)}
+              onClick={() => setReviewModalOpen(true)}
             >
               Lämna ditt omdöme
             </Button>
           </CardContent>
         </Card>
       </section>
-      <OrderModal open={orderModalOpen} onOpenChange={setOrderModalOpen} />
+      <ReviewModal open={reviewModalOpen} onOpenChange={setReviewModalOpen} />
     </>
   );
 }
