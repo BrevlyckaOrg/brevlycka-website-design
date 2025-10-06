@@ -2,7 +2,7 @@ import heroLetters from "@/assets/hero-letters.jpg";
 
 const MainDescription = () => {
   return (
-    <section id="hem" className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-background to-sepia-gold/10">
+    <section id="hem" className="relative min-h-[90vh] flex items-center justify-center bg-sepia-gold/10">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{ backgroundImage: `url(${heroLetters})` }}

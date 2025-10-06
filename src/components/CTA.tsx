@@ -19,7 +19,7 @@ const CTA = () => {
 
   return (
     <>
-      <section className="py-16 bg-gradient-to-r from-warm-beige/50 to-sepia-gold/20">
+      <section className="py-16 bg-sepia-gold/10">
         <Card className="max-w-lg mx-auto border-2 border-primary/20">
           <CardHeader className="text-center space-y-2">
             <div className="flex justify-center mb-2">
