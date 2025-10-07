@@ -16,7 +16,7 @@ const stories = [
       "När sista brevet skrivs återstår frågan: var deras kärlek ett öde – eller bara ett spel de båda förlorade?\n",
     letterCount: "12",
     imageUrl: loveStoryImage,
-    isActive: false,
+    isActive: true,
   },
   {
     title: "Kommande berättelser",

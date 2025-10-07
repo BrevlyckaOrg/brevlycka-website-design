@@ -16,7 +16,7 @@ const StoryCard = ({ title, description, letterCount, imageUrl, isActive }: Stor
       <div className="relative h-80 overflow-hidden">
         <img
           src={imageUrl}
-          alt={title}
+          alt={`${title} - Brevserie med ${letterCount} kärleksbrev från 1950-talet`}
           className="w-full h-full object-cover"
         />
         {!isActive && (
