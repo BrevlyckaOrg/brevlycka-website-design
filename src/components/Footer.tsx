@@ -7,7 +7,7 @@ const Footer = () => {
                     <div>
                         <h3 className="font-heading text-xl font-semibold mb-4">Kontakt</h3>
                         <div className="space-y-2 text-lg hover:text-[#F5F2EF] transition-colors">
-                            <a href="mailto:support@brevlycka.se" className="underline transition-colors">support@brevlycka.se</a>
+                            <a href="mailto:info@brevlycka.se" className="underline transition-colors">info@brevlycka.se</a>
                         </div>
                     </div>
                     <div className="mt-12 pt-8 text-center">
