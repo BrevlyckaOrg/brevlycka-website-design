@@ -21,6 +21,7 @@ interface ReviewModalProps {
 const ReviewModal = ({ open, onOpenChange }: ReviewModalProps) => {
     const [formData, setFormData] = useState({
         name: "",
+        email: "",
         address: "",
         postalCode: "",
         city: "",
@@ -40,6 +41,7 @@ const ReviewModal = ({ open, onOpenChange }: ReviewModalProps) => {
                 .insert([
                     {
                         name: formData.name,
+                        email: formData.email || null,
                         address: formData.address,
                         postal_code: formData.postalCode,
                         city: formData.city,
@@ -61,6 +63,7 @@ const ReviewModal = ({ open, onOpenChange }: ReviewModalProps) => {
             // Rensa formuläret
             setFormData({
                 name: "",
+                email: "",
                 address: "",
                 postalCode: "",
                 city: "",
@@ -154,6 +157,18 @@ const ReviewModal = ({ open, onOpenChange }: ReviewModalProps) => {
                         {formData.name && !validateWordCount(formData.name, 2) && (
                             <p className="text-sm text-red-600 font-medium">Ange förnamn och efternamn.</p>
                         )}
+                    </div>
+                    <div className="space-y-2">
+                        <Label htmlFor="email" className="text-lg font-semibold text-gray-900">E-post (valfritt)</Label>
+                        <Input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="din.epost@exempel.se"
+                            value={formData.email}
+                            onChange={handleChange}
+                            className="text-base h-11 border-2 border-gray-400 focus:border-wine focus:ring-2 focus:ring-wine/20"
+                        />
                     </div>
                     <div className="space-y-2">
                         <Label htmlFor="address" className="text-lg font-semibold text-gray-900">Gatuadress *</Label>
