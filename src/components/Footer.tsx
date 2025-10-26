@@ -6,20 +6,19 @@ const Footer = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                     <div>
                         <h3 className="font-heading text-xl font-semibold mb-4">Kontakt</h3>
-                        <div className="space-y-2 text-lg hover:text-[#F5F2EF] transition-colors">
-                            <a href="mailto:info@brevlycka.se" className="underline transition-colors">info@brevlycka.se</a>
+                        <div className="space-y-2 text-lg">
+                            <a href="mailto:info@brevlycka.se" className="block hover:text-[#F5F2EF] underline transition-colors">info@brevlycka.se</a>
                         </div>
                     </div>
-                    <div className="mt-12 pt-8 text-center">
-                        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                            <p className="ml-auto">© 2025 Brevlycka. Alla rättigheter förbehållna.</p>
-                            {/* <div className="flex gap-6 text-muted-foreground">
-                            <a href="#" className="hover:text-wine-red transition-colors">Kontakt</a>
-                            <a href="#" className="hover:text-wine-red transition-colors">Villkor</a>
-                            <a href="#" className="hover:text-wine-red transition-colors">Cookies</a>
-                        </div> */}
+                    <div>
+                        <h3 className="font-heading text-xl font-semibold mb-4">Mitt konto</h3>
+                        <div className="space-y-2 text-lg">
+                            <a href="/hantera-konto" className="block hover:text-[#F5F2EF] underline transition-colors">Mitt konto</a>
                         </div>
                     </div>
+                </div>
+                <div className="mt-12 pt-8 border-t border-[#C6A77C]/20 text-center">
+                    <p>© 2025 Brevlycka. Alla rättigheter förbehållna.</p>
                 </div>
             </div>
         </footer>

@@ -102,7 +102,7 @@ const ReviewModal = ({ open, onOpenChange }: ReviewModalProps) => {
                 </DialogHeader>
                 <form onSubmit={handleSubmit} className="space-y-5 mt-4">
                     <div className="space-y-2">
-                        <Label className="text-lg font-semibold text-gray-900">Betyg *</Label>
+                        <Label className="text-lg font-semibold text-gray-900">Betyg * (Välj 1-5 stjärnor)</Label>
                         <div className="flex gap-2">
                             {[1, 2, 3, 4, 5].map((star) => (
                                 <button

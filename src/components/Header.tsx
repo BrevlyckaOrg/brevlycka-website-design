@@ -116,12 +116,13 @@ import { useState } from 'react';
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navLinks = [
-    { href: "#hem", label: "Hem" },
+    { href: "/", label: "Hem" },
     { href: "#brevserier", label: "Brevserier" },
     // { href: "#hur-det-fungerar", label: "Så fungerar det" },
     // { href: "#recensioner", label: "Recensioner" },
     // { href: "#faq", label: "FAQ" },
     { href: "#kontakt", label: "Kontakt" },
+    { href: "/hantera-konto", label: "Mitt Konto" },
   ];
   return (
     <>
@@ -137,7 +138,7 @@ const Header = () => {
             <Menu className="h-6 w-6" />
           </button>
           
-          <a href="#hem" className="absolute left-1/2 transform -translate-x-1/2">
+          <a href="/" className="absolute left-1/2 transform -translate-x-1/2">
             <img
               src={brevlyckaLogo}
               alt="Brevlycka"
@@ -152,7 +153,7 @@ const Header = () => {
         {/* Desktop layout */}
         <div className="hidden lg:flex justify-between items-center py-4">
           <div className="flex items-center gap-4">
-            <a href="#hem" className="flex items-center">
+            <a href="/" className="flex items-center">
               <img
                 src={brevlyckaLogo}
                 alt="Brevlycka"
