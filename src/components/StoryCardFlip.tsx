@@ -88,6 +88,42 @@ const StoryCardFlip: React.FC<StoryCardFlipProps> = ({
             onKeyDown={(e) => e.key === 'Enter' && setFlipped((f) => !f)}
             aria-label={`Klicka för att läsa mer om ${title}`}
         >
+            {/* Hidden demo button for triggering checkout manually */}
+            <button
+                style={{ display: "none" }}
+                id="demo-checkout-trigger"
+                type="button"
+                onClick={async (e) => {
+                    e.stopPropagation();
+                    if (!priceId) {
+                        toast({
+                            title: "Fel",
+                            description: "Produkten är inte konfigurerad korrekt",
+                            variant: "destructive",
+                        });
+                        return;
+                    }
+                    setLoading(true);
+                    try {
+                        await createStripeCheckout({
+                            priceId: 'price_1SMxEtFlv6OlNKpK3xndobEZ',
+                            productName: title,
+                            isSubscription,
+                            totalLetters: typeof totalLetters === 'number' ? totalLetters : undefined,
+                            customerEmail: "info@brevlycka.se",
+                        });
+                    } catch (error) {
+                        toast({
+                            title: "Ett fel uppstod",
+                            description: "Kunde inte starta demo-checkout.",
+                            variant: "destructive",
+                        });
+                        setLoading(false);
+                    }
+                }}
+            >
+                Demo Checkout
+            </button>
             <div
                 className={`absolute inset-0 transition-transform duration-500 transform-gpu [transform-style:preserve-3d] ${flipped ? "rotate-y-180" : ""
                     }`}
