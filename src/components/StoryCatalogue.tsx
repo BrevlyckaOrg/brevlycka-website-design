@@ -40,7 +40,7 @@ const stories = [
     totalLetters: 12,
     imageUrl: loveStoryImage,
     isActive: true,
-    priceId: import.meta.env.VITE_STRIPE_SUBSCRIPTION_PRICE_ID,
+    priceId: import.meta.env.VITE_STRIPE_SUBSCRIPTION_SMR_PRICE_ID,
     price: "Prova 2 brev för 59 kr, därefter 109 kr/mån",
     isSubscription: true,
   },
